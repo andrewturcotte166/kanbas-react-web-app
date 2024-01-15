@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Profile Edit</title>
+</head>
+
+<body>
+    <h1>
+        Jose Annunziato
+    </h1>
+    <form action="/Kanbas/Account/Profile/screen.html">
+        <label>
+            Name:*
+            <input type="text" placeholder="Full Name" value="Jose Annuziato" />
+        </label>
+        <label>
+            Pronouns:
+            <select name="pronouns">
+                <option value="none">None</option>
+            </select>
+        </label>
+        <label>
+            Title:
+            <input type="text" placeholder="Title" />
+        </label>
+
+        <h2>Contact</h2>
+        <p>
+            No registered services, you can add some on the
+            <a href="#">settings</a>
+            page.
+        </p>
+
+        <h2>Biography</h2>
+        <p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
+        <textarea value="Faculty, Software Engineer, AI, Space, and renewables enthusiast."
+            placeholder="Biography Description"></textarea>
+
+        <h2>Links</h2>
+        <ul>
+            <li>
+                <a href="#">YouTube</a>
+                Links to an external site
+            </li>
+        </ul>
+
+        <button>Add another link</button>
+        <br />
+        <button>Cancel</button>
+        <button>Save Profile</button>
+        <br />
+        <button>Edit Profile</button>
+        <button>Cancel Editing</button>
+    </form>
+</body>
+
+</html>
