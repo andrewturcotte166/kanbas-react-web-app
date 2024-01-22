@@ -33,7 +33,7 @@
                         <li><a href="#">People</a></li>
                         <li><a href="#">Panopto Video</a></li>
                         <li><a href="#">Discussions</a></li>
-                        <li><a href="#">Annoucements</a></li>
+                        <li><a href="#">Announcements</a></li>
                         <li><a href="#">Pages</a></li>
                         <li><a href="#">Files</a></li>
                         <li><a href="#">Rubrics</a></li>
@@ -51,76 +51,82 @@
 
                     <h2>Assignment Name</h2>
                     <form action="/Kanbas/Courses/Assignments/screen.html">
-                        <input type="text" value="A1 - ENV + HTML" placeholder="Assignment Name" />
-                        <br />
+                        <p>
+                            <input type="text" value="A1 - ENV + HTML" placeholder="Assignment Name" />
+                        </p>
+
                         <textarea value="This is the assignment description"
                             placeholder="Assignment Description"></textarea>
-                        <br />
-                        <label>
-                            Points
-                            <br />
-                            <input type="number" value="0" min="0" max="100" />
-                        </label>
-                        <br />
-                        <label>
-                            Assignment Group
-                            <br />
-                            <select>
-                                <option value="assignments">ASSIGNMENTS</option>
-                            </select>
-                        </label>
 
-                        <br />
-                        <label>
-                            Display Grade as
-                            <br />
-                            <select>
-                                <option value="percentage">Percentage</option>
-                            </select>
-                        </label>
+                        <p><label>
+                                Points
+                                <br />
+                                <input type="number" value="0" min="0" max="100" />
+                            </label>
+                        </p>
 
-                        <br />
-                        <label>
-                            Submission Type
-                            <br />
-                            <select>
-                                <option value="online">Online</option>
-                            </select>
-                        </label>
+                        <p><label>
+                                Assignment Group
+                                <br />
+                                <select>
+                                    <option value="assignments">ASSIGNMENTS</option>
+                                </select>
+                            </label>
+                        </p>
 
-                        <br />
-                        Online Entry Options
-                        <br />
-                        <input type="checkbox" name="entry-options" value="text-entry">Text Entry</input>
-                        <input type="checkbox" name="entry-options" value="website-url">Website URL</input>
-                        <input type="checkbox" name="entry-options" value="media-recordings">Media Recordings</input>
-                        <input type="checkbox" name="entry-options" value="student-annotation">Student
-                        Annotation</input>
-                        <input type="checkbox" name="entry-options" value="file-uploads">File Uploads</input>
+                        <p><label>
+                                Display Grade as
+                                <br />
+                                <select>
+                                    <option value="percentage">Percentage</option>
+                                </select>
+                            </label>
+                        </p>
 
-                        <br />
+                        <p><label>
+                                Submission Type
+                                <br />
+                                <select>
+                                    <option value="online">Online</option>
+                                </select>
+                            </label>
+                        </p>
+
+                        <p>
+                            Online Entry Options<br />
+                            <input type="checkbox" name="entry-options" value="text-entry">Text Entry</input><br />
+                            <input type="checkbox" name="entry-options" value="website-url">Website URL</input><br />
+                            <input type="checkbox" name="entry-options" value="media-recordings">Media
+                            Recordings</input><br />
+                            <input type="checkbox" name="entry-options" value="student-annotation">Student
+                            Annotation</input><br />
+                            <input type="checkbox" name="entry-options" value="file-uploads">File Uploads</input>
+                        </p>
+
                         Assign
                         <br />
                         Assign to
                         <br />
                         <input type="text" value="Everyone" placeholder="Assignee" />
 
-                        <br />
-                        Due
-                        <br />
-                        <input type="date" value="2021-01-01" />
+                        <p>
+                            Due
+                            <br />
+                            <input type="date" value="2021-01-01" />
+                        </p>
 
-                        <br />
-                        Available from
-                        <br />
-                        <input type="date" value="2021-01-01" />
+                        <p>
+                            Available from
+                            <br />
+                            <input type="date" value="2021-01-01" />
+                        </p>
 
-                        <br />
-                        Until
-                        <br />
-                        <input type="date" value="2021-01-01" />
+                        <p>
+                            Until
+                            <br />
+                            <input type="date" value="2021-01-01" />
+                        </p>
 
-                        <br />
                         <button>Cancel</button>
                         <button>Save</button>
                     </form>
