@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>Profile Edit</title>
+</head>
+
+<body>
+    <h1>
+        Jose Annunziato
+    </h1>
+    <form action="/Kanbas/Account/Profile/screen.html">
+        <label>
+            Name:*
+            <input type="text" placeholder="Full Name" value="Jose Annuziato" />
+        </label>
+        <label>
+            Pronouns:
+            <select name="pronouns">
+                <option value="none">None</option>
+            </select>
+        </label>
+        <p>
+            <label>
+                Title:
+                <input type="text" placeholder="Title" />
+            </label>
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+            No registered services, you can add some on the
+            <a href="#">settings</a>
+            page.
+        </p>
+
+        <h2>Biography</h2>
+        <textarea value="Faculty, Software Engineer, AI, Space, and renewables enthusiast."
+            placeholder="Biography Description"></textarea>
+
+        <h2>Links</h2>
+        <ul>
+            <li>
+                <a href="#">YouTube Links to an external site</a>
+            </li>
+        </ul>
+        <table>
+            <thead>
+                <th>Title</th>
+                <th>URL</th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Link name" value="YouTube" />
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Link URL" value="https://www.youtube.com" />
+                    </td>
+                    <td>
+                        <a href="#">Remove</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button>Add another link</button>
+        <br />
+        <button>Cancel</button>
+        <button>Save Profile</button>
+        <br />
+        <button>Edit Profile</button>
+        <button>Cancel Editing</button>
+    </form>
+</body>
+
+</html>
