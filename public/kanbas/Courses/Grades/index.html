@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Grades</title>
+</head>
+
+<body>
+    <form>
+        <select name="Gradebook">
+            <option>Gradebook</option>
+        </select>
+        <button>Import</button>
+        <select name="Export">
+            <option>Export</option>
+        </select>
+        <button>Configure</button>
+        <h2>Student Names</h2>
+        <input type="text" placeholder="Search Students" />
+        <h2>Assignment Names</h2>
+        <input type="text" placeholder="Search Assignments" />
+        <p><button>Apply Filters</button></p>
+    </form>
+
+    <table border="1ptx">
+        <thead>
+            <th>Student Name </th>
+            <th>A1 SETUP Out of 100 </th>
+            <th>A2 HTML Out of 100 </th>
+            <th>A3 CSS Out of 100 </th>
+            <th>A4 BOOTSTRAP Out of 100 </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cleo Sertori</td>
+                <td>80</td>
+                <td>75</td>
+                <td>72</td>
+                <td>83</td>
+            </tr>
+            <tr>
+                <td>Lewis McCartney</td>
+                <td>90</td>
+                <td><input type="number" min="0" max="100" placeholder="0"></input></td>
+                <td>92</td>
+                <td>93</td>
+            </tr>
+            <tr>
+                <td>Emma Gilbert</td>
+                <td>98</td>
+                <td>100</td>
+                <td>95</td>
+                <td>97</td>
+            </tr>
+            <tr>
+                <td>Rikki Chadwick</td>
+                <td>70</td>
+                <td>35</td>
+                <td>0</td>
+                <td><input type="number" min="0" max="100" placeholder="0"></input></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
