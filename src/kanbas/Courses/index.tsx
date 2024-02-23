@@ -1,4 +1,4 @@
-import { courses } from "../../Kanbas/Database";
+import { courses } from "../Database";
 import "./index.css";
 import { Link, Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
 import "./../../libs/font-awesome/css/font-awesome.min.css"
