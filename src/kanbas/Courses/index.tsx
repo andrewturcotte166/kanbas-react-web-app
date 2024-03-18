@@ -1,4 +1,3 @@
-import { courses } from "../Database";
 import "./index.css";
 import { Link, Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
 import "./../../libs/font-awesome/css/font-awesome.min.css"
@@ -7,7 +6,7 @@ import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import ModuleNavBar from "./Home/NavBar";
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
     const { courseId } = useParams();
     const { pathname } = useLocation();
     const course = courses.find((course) => course._id === courseId);
