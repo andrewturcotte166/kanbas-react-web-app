@@ -1,16 +1,29 @@
 import "./index.css";
 import { Link, Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import "./../../libs/font-awesome/css/font-awesome.min.css"
 import CourseNavigation from "./Navigation";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import ModuleNavBar from "./Home/NavBar";
-function Courses({ courses }: { courses: any[]; }) {
+const API_BASE = process.env.REACT_APP_API_BASE;
+function Courses() {
     const { courseId } = useParams();
     const { pathname } = useLocation();
-    const course = courses.find((course) => course._id === courseId);
-    const courseTitle = course?.name;
+    const COURSES_API = `${API_BASE}/api/courses`;
+    const [course, setCourse] = useState<any>({ _id: "" });
+    const findCourseById = async (courseId?: string) => {
+        const response = await axios.get(
+            `${COURSES_API}/${courseId}`
+        );
+        setCourse(response.data);
+    };
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
+    const courseTitle = course.name ? course.name : "Course";
     return (
         <div>
             <h2>
