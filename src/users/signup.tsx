@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, } from "react";
 import { useNavigate } from "react-router-dom";
 import * as client from "./client";
 export default function Signup() {
@@ -15,17 +15,6 @@ export default function Signup() {
             }
         }
     };
-    const fetchProfile = async () => {
-        try {
-            await client.profile();
-            navigate("/Kanbas/Account/Profile");
-        } catch (error) {
-            
-        }
-    };
-    useEffect(() => {
-        fetchProfile();
-    }, []);
     return (
         <div className="p-4">
             <h1>Signup</h1>
