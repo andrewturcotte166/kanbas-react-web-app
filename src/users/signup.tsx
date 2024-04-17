@@ -1,0 +1,31 @@
+import React, { useState, } from "react";
+import { useNavigate } from "react-router-dom";
+import * as client from "./client";
+export default function Signup() {
+    const [error, setError] = useState("");
+    const [user, setUser] = useState({ username: "", password: "" });
+    const navigate = useNavigate();
+    const signup = async () => {
+        try {
+            await client.signup(user);
+            navigate("/Kanbas/Account/Profile");
+        } catch (err: any) {
+            if (err.response) {
+                setError(err.response.data.message);
+            }
+        }
+    };
+    return (
+        <div className="p-4">
+            <h1>Signup</h1>
+            {error && <div>{error}</div>}
+            <input value={user.username} placeholder="username" onChange={(e) => setUser({
+                ...user, username: e.target.value
+            })} /><br />
+            <input value={user.password} placeholder="password" type="password" onChange={(e) => setUser({
+                ...user, password: e.target.value
+            })} /><br />
+            <button className="btn btn-success mt-2" onClick={signup}> Signup </button>
+        </div>
+    );
+}
